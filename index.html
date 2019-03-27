@@ -7,39 +7,36 @@
     <title>Girls who run the tech world</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
-    <script src="assets\javascript\app.js"></script>
+
+
 </head>
 
 <body>
 
-    <div id="container">
-        <div id="start">Test your knowledge</div>
+
+        <div id="start">Start</div>
+  
         <!--Add a button to start game-->
-        <div id="quiz" style="display: none">
-            <div id="question"></div>
-
-            <div id="options">
-                <div class="choice" id="A"></div>
-                <div class="choice" id="B"></div>
-                <div class="choice" id="c"></div>
-                <div class="choice" id="D"></div>
-            </div>
-            <div id="time">
-                <div id="counter"></div>
-
-            </div>
-            <div id="progress"></div>
-        </div>
-
+        <div id="quiz" style="display :none;">
+            <!--insert image to div below-->
+<div id="questionImage"></div>
+<div id="question"><p>Question</p></div>
+<div id="timer">
+    <div id="counter">Counter</div>
+    <div id="backTimeGauge"></div>
+    <div id="timeGauge"></div>
+</div>
+<div id="options">
+        <div class="option" id="A" onclick="checkAnswer('A')" >A</div>
+        <div class="option" id="B" onclick="checkAnswer('B')" >B></div>
+        <div class="option" id="c" onclick="checkAnswer('C')" >C></div>
+        <div class="option" id="D" onclick="checkAnswer('D')" >D></div>
     </div>
-
-
-</body>
-
-</html>
-
-
-
+    <div id="progress"></div>
+<div id="scoreContainer" style="display: none;">
+    <img src="assets/images/thumbsup.png">
+</div>
+<img src="" alt="">
 
 
 
@@ -58,12 +55,8 @@
 
 
 
-
-
-
-
-
-
+            </div>
+    <script src="./assets/javascript/app.js"></script>
 
 </body>
 
