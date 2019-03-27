@@ -48,7 +48,7 @@ let questions=[
             choiceB : "Ava Durney",
             choiceC : "Merrisa Yates",
             choiceD : "Naomi Unagi",
-            correct : "Melinda Gates, MBA-Philantropist",
+            correct : "Melinda Gates-MBA-Philantropist",
         },
     
         {
@@ -75,7 +75,7 @@ let questions=[
             choiceB : "Ursula Burns",
             choiceC : "Stella Jean-Baptiste",
             choiceD : "Sandra Burnside-Pimlico",
-            correct : "Ursula Burns – Chair-CEO, Xerox",
+            correct : "Ursula Burns–Chair-CEO, Xerox",
         },
 
         {
@@ -90,7 +90,7 @@ let questions=[
         {
             question : "As the CFO of this major corporations, one of the wealthiest men in the world would not be able to count his bills without her.",
             choiceA : "Megan Harrison",
-            choiceB : "Angelica Corte",
+            choiceB : "Angelica Cortez",
             choiceC : "Amy Woods",
             choiceD : "Vivienne Westwood",
             correct : "Amy Woods-CFO, Microsoft",
@@ -102,7 +102,7 @@ let questions=[
             choiceB : "Meghan Markle",
             choiceC : "Lisa Bllomberg",
             choiceD : "Irena Korzel",
-            correct : "Safra Catz, Co-CEO, Oracle",
+            correct : "Safra Catz-Co-CEO, Oracle",
         },
 
         {
@@ -111,24 +111,24 @@ let questions=[
             choiceB : "Anne Wojcicki",
             choiceC : "Anne Whitman ",
             choiceD : "Anne Burns",
-            correct : "Anne Wojcicki, Cofounder and CEO, 23andMe",
+            correct : "Anne Wojcicki-Cofounder and CEO, 23andMe",
         },
 
         {
-            question : "",
-            choiceA : "",
-            choiceB : "",
-            choiceC : "",
+            question : "She worked her way up as a Systems Engineer at the same IT company she now heads. She negotiated a major deal with PricewaterhouseCoopers and is highly respected for her leadership. ",
+            choiceA : "Gigi Hadid",
+            choiceB : "Marishka St John",
+            choiceC : "Poppy Monte",
             choiceD : "Ginni Rommetty",
-            correct : "Ginni Rommetty-CEO, IBM",
+            correct : "Ginni Rommetty-Chair, President, and CEO, IBM",
         },
 
         {
             question : "She served as President and CEO for a multinational IT company and then ran for governor of California in 2016. She is currently the CEO of Quibi.",
-            choiceA : "",
-            choiceB : "",
-            choiceC : "",
-            choiceD : "",
+            choiceA : "Tish Noble",
+            choiceB : "Nikki Sladden",
+            choiceC : "Meg Whitman",
+            choiceD : "Brenda Mcneel",
             correct : "Meg Whitman-CEO,QUIBI",
         },
 ]
