@@ -40,14 +40,14 @@
 
 
 
-(function () {
+// (function () {
 
     var quizQuestions = [{
 
         question: "She moved from google to yahoo and was ranked sixth on Fortune magazine's 40 under 40 list.",
         imgSrc: "./assets/images/marmay.jpg",
         choices: ["Linda Hamilton", "Amy Cohen", "Lisa Woo", "Marrisa Mayer"],
-        correct: "Marrisa Mayer-President-CEO, Yahoo,",
+        correct: "Marrisa Mayer",
     },
     {
         question: "She moved from google to yahoo and was ranked sixth on Fortune magazine's 40 under 40 list.",
@@ -123,18 +123,24 @@
         choices: ["Tish Noble","Nikki Sladden","Meg Whitman","Brenda Mcneel"],
             correct : "Meg Whitman-CEO,QUIBI",
 }];
-// function displayQuestions(){
-//     $("quizquestion")text
-
+function displayQuestions(quizQuest){
+    $("#quiz").text(quizQuest.question);
+    for(let i = 0; i < 4; i++) {
+        $("#quiz").append(`<p class="options">${quizQuest.choices[i]}</p>`);
+    }
+    $(".options").on("click", function(event){
+        // console.log(event);
+        check (event.target.textContent, quizQuest.correct)
+    })
 }
 
 
-function check(){
+function check(userChoice, correct){
     if (userChoice === correct){
         alert("correct!");
     
     }
-    else if userChoice !== correct{
+    else if (userChoice !== correct){
         alert ("incorrect");
     }
 }
@@ -151,7 +157,8 @@ function run() {
 // var indexQandA = 0;
 // var answered = false;
 // var correct;
-var userChoice;
+displayQuestions(quizQuestions[0]);
+
 
 
 
@@ -261,11 +268,11 @@ var userChoice;
 // // function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 // // 	function showQuestions(questions, quizContainer){
-// // 		// code will go here
+// // 		//
 // // 	}
 
 // // 	function showResults(questions, quizContainer, resultsContainer){
-// // 		// code will go here
+// // 		//
 // // 	}
 
 // // 	// show the questions
