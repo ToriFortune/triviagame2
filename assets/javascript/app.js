@@ -107,40 +107,50 @@
         question: "With a sibling who is also a CEO, it is no wonder that this powerful woman is a the helm of a genomics and biotechnology company.",
         imgSrc: "./assets/images/annwoj.jpg",
         choices: ["Anne Catz-Wosniack", "Anne Wojcicki","Anne Whitman ","Anne Burns"],
-            correct : "Anne Wojcicki-Cofounder and CEO, 23andMe",
+            correct : "Anne Wojcicki",
 },
 
     {
         question: "She worked her way up as a Systems Engineer at the same IT company she now heads. She negotiated a major deal with PricewaterhouseCoopers and is highly respected for her leadership. ",
         imgSrc: "./assets/images/ginrom.jpg",
         choices: ["Gigi Hadid","Marishka St John","Poppy Monte","Ginni Rommetty"],
-            correct : "Ginni Rommetty-Chair, President, and CEO, IBM",
+            correct : "Ginni Rommetty",
 },
 
     {
         question: "She served as President and CEO for a multinational IT company and then ran for governor of California in 2016. She is currently the CEO of Quibi.",
         imgSrc: "./assets/images/megwhi.jpg",
         choices: ["Tish Noble","Nikki Sladden","Meg Whitman","Brenda Mcneel"],
-            correct : "Meg Whitman-CEO,QUIBI",
+            correct : "Meg Whitman",
 }];
 function displayQuestions(quizQuest){
-    $("#quiz").text(quizQuest.question);
+    $("#quiz").append(quizQuest.question);
+    console.log(quizQuest)
     for(let i = 0; i < 4; i++) {
         $("#quiz").append(`<p class="options">${quizQuest.choices[i]}</p>`);
     }
-    $(".options").on("click", function(event){
-        // console.log(event);
-        check (event.target.textContent, quizQuest.correct)
-    })
+    
 }
 
 
+$(".options").on("click", function(event){
+    // console.log(event);
+    
+});
+
+$('body').on('click', '.options', function() {
+    check (event.target.textContent, quizQuest.correct)
+});
+
+
 function check(userChoice, correct){
+    console.log(userChoice);
+    console.log(correct);
     if (userChoice === correct){
         alert("correct!");
     
     }
-    else if (userChoice !== correct){
+    else  {
         alert ("incorrect");
     }
 }
@@ -157,7 +167,11 @@ function run() {
 // var indexQandA = 0;
 // var answered = false;
 // var correct;
-displayQuestions(quizQuestions[0]);
+
+for (var i = 0; i < quizQuestions.length; i++) {
+    displayQuestions(quizQuestions[i]);
+}
+
 
 
 
